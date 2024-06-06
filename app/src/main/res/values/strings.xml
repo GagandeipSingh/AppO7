@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppO7</string>
+    <string name="enter_name_amp_college"><![CDATA[Enter Name & College..]]></string>
+    <string name="enter_name">Enter Name..</string>
+    <string name="enter_college">Enter College..</string>
+    <string name="check">Check</string>
+    <string name="second_activity">Second Activity..</string>
 </resources>
