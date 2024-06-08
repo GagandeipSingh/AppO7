@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:gravity="center"
+    android:layout_marginTop="100dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,27 +11,144 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_name_amp_college"/>
-    <EditText
-        android:id="@+id/name"
+        android:text="@string/write_about_yourself"
+        android:layout_gravity="start"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#263B45"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="@string/enter_name"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="@string/your_name"
+            android:textSize="19sp" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints="Pta Ni"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_number"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:maxLength="10"
+            android:autofillHints="Pta Ni"
+            android:hint="@string/enter_number"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_dob"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:maxLength="2"
+            android:autofillHints="Pta Ni"
+            android:hint="@string/enter_dob"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/study"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:textSize="19sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:layout_marginStart="40dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:textSize="17sp"
+                android:text="@string/yes"/>
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:textSize="17sp"
+                android:text="@string/no"/>
+        </RadioGroup>
+    <EditText
+        android:id="@+id/studying"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        android:autofillHints="Pta Ni"
+        android:hint="@string/field_of_study"
         android:inputType="text"
-        android:minHeight="48dp" />
-
-    <EditText
-        android:id="@+id/college"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="@string/enter_college"
-        android:minHeight="48dp" />
-
+        android:minHeight="48dp"
+        android:textColorHint="#314B57" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#263B45"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/check"
         android:text="@string/check"/>
+
 </LinearLayout>

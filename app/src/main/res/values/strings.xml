@@ -1,8 +1,22 @@
 <resources>
     <string name="app_name">AppO7</string>
-    <string name="enter_name_amp_college"><![CDATA[Enter Name & College..]]></string>
     <string name="enter_name">Enter Name..</string>
     <string name="enter_college">Enter College..</string>
     <string name="check">Check</string>
     <string name="second_activity">Second Activity..</string>
+    <string name="write_about_yourself">Write about Yourself..</string>
+    <string name="your_name">Your Name: </string>
+    <string name="your_number">Your Number:</string>
+    <string name="enter_number">Enter Number..</string>
+    <string name="your_dob">Your DoB:</string>
+    <string name="enter_dob">Enter DoB..</string>
+    <string name="study">Are You Studying: </string>
+    <string name="rstudy">Studying: </string>
+    <string name="no">No\u00A0\u00A0\u00A0\u00A0</string>
+    <string name="Null">Null</string>
+    <string name="yes">Yes</string>
+    <string name="your_entered_information">Your Entered Information..</string>
+    <string name="contact_at">I can contact you at..</string>
+    <string name="back">Back</string>
+    <string name="field_of_study">Field of Study\u00A0\u00A0</string>
 </resources>
